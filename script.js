@@ -1,3 +1,5 @@
+// Variables
+
 const lastNameField = document.getElementById("last-name-field");
 const gradeLevelField = document.getElementById("grade-level-field");
 const submitButton = document.getElementById("submit-button");
@@ -8,9 +10,27 @@ const psych = document.getElementById("psych");
 const social = document.getElementById("social-worker");
 const counselor = document.getElementById("counselor");
 
+
+// Event Listeners
+
 submitButton.addEventListener("click", function(e) {
     updateInfo(lastNameField.value.toLowerCase(), parseInt(gradeLevelField.value));
 })
+
+lastNameField.addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+        updateInfo(lastNameField.value.toLowerCase(), parseInt(gradeLevelField.value));
+    }
+})
+
+gradeLevelField.addEventListener("keypress", function(e) {
+    if (e.key === 'Enter') {
+        updateInfo(lastNameField.value.toLowerCase(), parseInt(gradeLevelField.value));
+    }
+})
+
+
+// Main Update Function
 
 function updateInfo(lastName, gradeLevel) {
     console.log(lastName + " " + gradeLevel);
