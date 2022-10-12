@@ -43,12 +43,10 @@ function updateInfo(lastName, gradeLevel) {
     if (lastName < "des") {
         psych.innerText = "Ms. Susan Barnshaw";
         social.innerText = "Ms. Jodie Chodos";
-        console.log("lastName between A and Der");
     }
     if (lastName >= "des" && lastName < "ko") {
         psych.innerText = "Mr. Michael Carter";
         social.innerText = "Ms. Sharon Vance";
-        console.log("lastName between Des and Kn");
     }
     if (lastName >= "ko" && lastName < "ree") {
         psych.innerText = "Ms. Judy Campbell";
