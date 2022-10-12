@@ -33,7 +33,6 @@ gradeLevelField.addEventListener("keypress", function(e) {
 // Main Update Function
 
 function updateInfo(lastName, gradeLevel) {
-    console.log(lastName + " " + gradeLevel);
 
     // Handle blank entries
     if (lastName === "" || isNaN(gradeLevel) ) {
